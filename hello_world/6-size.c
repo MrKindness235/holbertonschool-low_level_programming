@@ -3,7 +3,7 @@
 /**
  * main - we do some counting
  *
- * Retun - zero, as usual
+ * Return: zero, as usual
  */
 
 int main(void)
