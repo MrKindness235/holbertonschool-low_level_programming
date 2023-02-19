@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - prints n's sign
+ * main- prints n's sign
  *
- * return: zero
+ * Return: zero
  */
 
 int main(void)
@@ -29,5 +29,5 @@ else
 {
 printf("%d is negative\n", n);
 }
-
+return (0);
 }
