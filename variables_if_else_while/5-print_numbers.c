@@ -3,7 +3,7 @@
 /**
  * main - all 10 base numbers printed
  *
- *  return: zero
+ * Return: zero
  */
 
 int main(void)
@@ -12,6 +12,6 @@ int main(void)
 
 	for (n = 0 ; n <= 9 ; n++)
 	printf("%d", n);
-	printf("\n");
+printf("\n");
 	return (0);
 }
