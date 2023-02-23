@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
  * main- Displays _putchar
@@ -6,7 +6,15 @@
  * Return: zero
  */
 
-int _putchar(char c)
+int a[] = {95, 112, 117, 116, 97, 114};
+int i;
+
+int main(void)
 {
-		return (write(1, &c, 1));
+	for (i = 0; i < 8; i++)
+       	{
+ _putchar (a[i]);
+	}
+	_putchar('\n');
+		return (0);
 }
