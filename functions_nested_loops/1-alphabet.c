@@ -6,9 +6,9 @@
  * Return: zero
  */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
-int a[] = {97 ... 122};
+int a[] = {97} ... {122};
 int i;
 
 for (i = 0; i < 25; i++)
