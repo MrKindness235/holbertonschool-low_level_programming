@@ -2,8 +2,9 @@
 /**
  * mul - Checks for a digit, which is defined as a decimal between 0 and 9
  *
- * Return: 1 for digit found and 'c' for no digit found
- * @c: an integer number
+ * Return: 'a' and 'b'
+ * @a: an integer number which will be multiplied with 'b'
+ * @b: an integer number which will be multuplied with 'a'
  */
 int mul(int a, int b)
 {
