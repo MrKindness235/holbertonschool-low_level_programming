@@ -16,7 +16,6 @@ int i;
 		i++;
 		}
 	_putchar (i);
-		 
 	}
 _putchar('\n');
 }
