@@ -3,7 +3,7 @@
 /**
  * _isupper - Checks for uppercase character
  *
- * Return: 1 for uppercase abd 'c' for not
+ * Return: 1 for uppercase and 'c' for not
  * @c: an integer number
  */
 
