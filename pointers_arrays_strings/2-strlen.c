@@ -2,8 +2,9 @@
 
 int _strlen(char *s)
 {
-	int l;
-	while (l != *s)
+	int l = 0;
+
+	while (s[l] != *s)
 	{
 		l++;
 	}
