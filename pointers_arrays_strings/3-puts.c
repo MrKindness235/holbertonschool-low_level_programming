@@ -8,7 +8,7 @@
  * @str: string of chars
  */
 
-int _puts(char *str)
+void  _puts(char *str)
 {
 	int p = 0;
 
