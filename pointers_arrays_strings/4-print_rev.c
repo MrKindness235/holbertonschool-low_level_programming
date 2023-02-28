@@ -16,10 +16,10 @@ void print_rev(char *s)
 	{
 		p++;
 	}
-	while (s[p] > 0)
+	while (p > 0)
 	{
 	p--;
+	_putchar (s[p]);
 	}
-		putchar (s[p]);
-		putchar ('\n');
+	_putchar ('\n');
 }
