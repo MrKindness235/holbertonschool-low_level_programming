@@ -17,12 +17,12 @@ void rev_string(char *s)
 	while (s[p] != '\0')
 	{
 		p++;
+		while (p > 0)
+		{
+		a[q] = s[p];
+		q++;
+		p--;
+		}
+	s[p] = a[q];
 	}
-	while (p > 0)
-	{
-	a[q] = s[p];
-	q++;
-	p--;
-	}
-	s = a;
 }
