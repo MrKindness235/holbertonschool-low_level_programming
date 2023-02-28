@@ -1,1 +1,1 @@
-Learning pointers, great tools to redirect values between functions. Laylanes of values if you will.
+Learning pointers, great tools to redirect values between functions. Leylines of values if you will.
