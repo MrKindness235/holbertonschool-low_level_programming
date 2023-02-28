@@ -20,6 +20,6 @@ void print_rev(char *s)
 	{
 	p--;
 	}
-		_putchar (s[p]);
-		_putchar ('\n');
+		putchar (s[p]);
+		putchar ('\n');
 }
