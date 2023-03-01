@@ -11,18 +11,17 @@
 void rev_string(char *s)
 {
 	int p = 0;
-	int p2 = 0;
-	int a = 0;
+	int q = 0;
+	char r;
 
-	while (s[p] != '\0')
+	while (s[p])
 	{
 		p++;
 	}
-	while (p > 0)
+	while (q < p--)
 	{
-		a = s[p];
-		s[p2] = a;
-		p--;
-		p2++;
+		r = s[q];
+		s[q++] = s[p];
+		s[p] = r;
 	}
 }
