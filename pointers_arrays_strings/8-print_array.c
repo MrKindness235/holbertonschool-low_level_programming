@@ -14,15 +14,22 @@ void print_array(int *a, int n)
 {
 	int p = 0;
 
-	if (p == 0)
+	if (n > 0)
 	{
-		printf("%d", *(a + p));
-		p++;
+		if (p == 0)
+		{
+			printf("%d", *(a + p));
+			p++;
+		}
+		while (p != n)
+		{
+			printf(", %d", *(a + p));
+			p++;
+		}
+		putchar ('\n');
 	}
-	while (p != n)
+	else
 	{
-		printf(", %d", *(a + p));
-		p++;
+		putchar ('\n');
 	}
-	putchar ('\n');
 }
