@@ -38,6 +38,5 @@ void puts_half(char *str)
 		p++;
 		_putchar (str[p]);
 		}
-		_putchar ('\n');
 	}
 }
