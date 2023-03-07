@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _strlen - Returns given string lenght
+ *
+ * Return: Given string lenght
+ *
+ * @s: pointer
+ */
+
 int factorial(int n)
 {
 	if (n < 0)
