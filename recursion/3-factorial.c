@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strlen - Returns given string lenght
+ * factorial - Returns factorial of given interger.
  *
- * Return: Given string lenght
+ * Return: Factorial of given interger.
  *
- * @s: pointer
+ * @n: An interger.
  */
 
 int factorial(int n)
