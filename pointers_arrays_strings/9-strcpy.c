@@ -19,11 +19,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[c] = src[c];
 		c++;
-		if (src[c] == '\0')
-		{
-			dest[c] = src[c];
-			break;
-		}
 	}
 	return (dest);
 }
