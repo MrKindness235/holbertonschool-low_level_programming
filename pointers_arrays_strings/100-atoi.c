@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 	int c = 0;
-	int i = 0;
+	unsigned int i = 0;
 	int tof = 0;
 	int polo = 1;
 
@@ -33,6 +33,5 @@ int _atoi(char *s)
 			}
 		c++;
 	}
-		i *= polo;
-		return (i);
+		return (i * polo);
 }
