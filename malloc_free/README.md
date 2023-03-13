@@ -1,0 +1,1 @@
+Malloc's and it's brother's utility should not be taken lightly. This is another step to understanding the essential concepts and tools for the manipulation of used memory space. C is fun, I can assure that.
