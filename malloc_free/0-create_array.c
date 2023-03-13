@@ -1,6 +1,13 @@
 #include "main.h"
 
 /**
+ * *create_array - A handy function that "creates an  array".
+ *
+ * Return: 0 for a task well performed, null for error.
+ *
+ * @size: The length of the soon to be array.
+ * @c: The character to be inside the array.
+ *
  */
 
 char *create_array(unsigned int size, char c)
@@ -21,7 +28,7 @@ char *create_array(unsigned int size, char c)
 
 	for (i = 0; i != s; i++)
 	{
-		s[i] = c;
+		p[i] = c;
 	}
 
 	return (p);
