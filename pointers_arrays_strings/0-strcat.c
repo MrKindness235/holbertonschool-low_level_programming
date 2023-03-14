@@ -1,6 +1,12 @@
 #include "main.h"
 
 /**
+ * *_strcat - Concatenates two strings.
+ *
+ * Return: Destiny.
+ *
+ * @dest: Destiny of concatenation.
+ * @src: Source of concatenation.
  */
 
 char *_strcat(char *dest, char *src)
