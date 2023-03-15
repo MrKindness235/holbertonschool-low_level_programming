@@ -17,18 +17,23 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		;
 	}
+
 	p = malloc(sizeof(char) * i + 1);
+
 	if (p == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; p[i] != '\0'; i++)
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		p[i] = str[i];
 	}
+
 	return (p);
 }
