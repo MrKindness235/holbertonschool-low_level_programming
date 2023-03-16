@@ -1,6 +1,13 @@
 #include "main.h"
 
 /**
+ * **alloc_grid - Creates a GRID using POINTERS
+ * and MALLOC. REJOICE.
+ *
+ * Return: MAGIC (grid pointer).
+ *
+ * @width: Width of the grid.
+ * @height: Height of the grid.
  */
 
 int **alloc_grid(int width, int height)
