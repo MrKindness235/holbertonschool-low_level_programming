@@ -1,26 +1,43 @@
 #include "main.h"
 
 /**
-* free_grid - Frees given grid.
-*
-* Return: NULL.
-*
-* @grid: Given grid.
-* @height: Given height of said grid.
-*/
+ * **alloc_grid - Creates a GRID using POINTERS
+ * and MALLOC. REJOICE.
+ *
+ * Return: MAGIC (grid pointer).
+ *
+ * @width: Width of the grid.
+ * @height: Height of the grid.
+ */
 
-void free_grid(int **grid, int height)
+int **alloc_grid(int width, int height)
 {
-	int h = 0;
+	int **p;
+	int a = 0;
 
-	if (grid == NULL || h <= 0)
+	if (width <= 0 || height <= 0)
 	{
-		exit(1);
+		return (NULL);
 	}
-	while (h < height)
+	p = malloc(sizeof(int *) * height);
+	if (p == NULL)
 	{
-		free(grid[h]);
-		h++;
+		return (NULL);
 	}
-	free(grid);
+	while (a < height)
+	{
+		p[a] = malloc(sizeof(int) * width);
+		if (p[a] == NULL)
+		{
+			while (a >= 0)
+			{
+				free(p[a]);
+				a--;
+			}
+			free(p);
+			return (NULL);
+		}
+		a++;
+	}
+	return (p);
 }
