@@ -2,7 +2,11 @@
 #define _FILE_NAME_H_
 
 /**
- * struct dog - Cutest animal around.
+ * struct dog - Cutest animal around
+ *
+ * @name: Name of the doggy.
+ * @age: Age of the doggo.
+ * @owner: Owner of the Pupper.
  */
 
 struct dog
