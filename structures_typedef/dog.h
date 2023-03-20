@@ -2,7 +2,7 @@
 #define _FILE_NAME_H_
 
 /**
- * dog - Cutest animal around.
+ * struct dog - Cutest animal around.
  */
 
 struct dog
