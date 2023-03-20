@@ -1,5 +1,9 @@
 #ifndef _FILE_NAME_H_
-#define _FILe_NAME_H_
+#define _FILE_NAME_H_
+
+/**
+ * dog - Cutest animal around.
+ */
 
 struct dog
 {
