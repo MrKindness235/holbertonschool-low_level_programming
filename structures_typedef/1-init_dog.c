@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * init_dog - Initializes your own very dog profile!
  *
