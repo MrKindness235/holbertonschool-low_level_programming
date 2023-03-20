@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
+
 /**
  * init_dog - Initializes your own very dog profile!
  *
