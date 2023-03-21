@@ -3,6 +3,35 @@
 #include <stdlib.h>
 
 /**
+ * cad_str - Counts, Allocates and Duplicates a string.
+ *
+ * Return: Newly allocated string.
+ *
+ * @str: String to be counted and allocated.
+ */
+
+char *cad_str(char *str)
+{
+	char *dup;
+	int c;
+
+	if (str != NULL)
+	{
+	for (c = 0; str[c] != '\0'; c++)
+	dup = malloc(sizeof(char) * c + 1);
+		if (dup == NULL)
+			return (NULL);
+		for (c = 0; str[c] != '\0'; c++)
+		{
+			dup[c] = str[c];
+		}
+		return (dup);
+	}
+	else
+		return (NULL);
+}
+
+/**
  * new_dog - Creates a new dog using given arguments.
  *
  * Return: NULL if fails; New dog if all goes as expected.
