@@ -20,7 +20,9 @@ char *cad_str(char *str)
 	for (c = 0; str[c] != '\0'; c++)
 	dup = malloc(sizeof(char) * c + 1);
 		if (dup == NULL)
+		{
 			return (NULL);
+		}
 		for (c = 0; str[c] != '\0'; c++)
 		{
 			dup[c] = str[c];
@@ -59,7 +61,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		}
 	}
 	else
+	{
+		free(nd);
 		return (NULL);
+	}
 	if (owner != NULL)
 	{
 		nd->owner = cad_str(owner);
@@ -69,7 +74,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		}
 	}
 	else
+	{
+		free(nd->name);
+		free(nd);
 		return (NULL);
+	}
 	nd->age = age;
 	return (nd);
 }
