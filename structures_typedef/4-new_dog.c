@@ -13,7 +13,7 @@
 char *cad_str(char *str)
 {
 	char *dup;
-	int c;
+	int c = 0;
 
 	if (str != NULL)
 	{
@@ -27,6 +27,7 @@ char *cad_str(char *str)
 		{
 			dup[c] = str[c];
 		}
+		dup[c] = '\0';
 		return (dup);
 	}
 	else
