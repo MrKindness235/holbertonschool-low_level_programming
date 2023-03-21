@@ -43,7 +43,6 @@ char *cad_str(char *str)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int c = 0;
 	dog_t *nd;
 
 	nd = malloc(sizeof(dog_t));
@@ -53,30 +52,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	if (name != NULL)
 	{
-		for (c = 0; name[c] != '\0'; c++)
-		nd->name = malloc(sizeof(char) * c + 1);
+		nd->name = cad_str(name);
 		if (nd->name == NULL)
 		{
 			return (NULL);
-		}
-		for (c = 0; name[c] != '\0'; c++)
-		{
-			nd->name[c] = name[c];
 		}
 	}
 	else
 		return (NULL);
 	if (owner != NULL)
 	{
-		for (c = 0; owner[c] != '\0'; c++)
-		nd->owner = malloc(sizeof(char) * c + 1);
+		nd->owner = cad_str(owner);
 		if (nd->owner == NULL)
 		{
 			return (NULL);
-		}
-		for (c = 0; owner[c] != '\0'; c++)
-		{
-		nd->owner[c] = owner[c];
 		}
 	}
 	else
