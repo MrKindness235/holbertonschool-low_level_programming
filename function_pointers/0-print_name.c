@@ -1,4 +1,5 @@
-#include "main.h"
+#include "function_pointers.h"
+
 
 /**
  * print_name - A bit self explanatory, isn't it?
