@@ -3,7 +3,7 @@
 /**
  * print_list - Prints values inside given list.
  *
- * Return: zero.
+ * Return: Number of nodes.
  *
  * @h: Pointer to given list.
  */
