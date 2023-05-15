@@ -14,6 +14,9 @@ if (!head || !str)
 return (NULL);
     
     new->str = strdup(str);
+    if (new->str == NULL)
+    free(new-str);
+
     new->len = strlen(str);
     new->next = NULL;
 
