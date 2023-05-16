@@ -16,7 +16,7 @@ list_t *new = malloc(sizeof(list_t));
 if (!new)
 {
         free(new);
-return(0);
+        return(0);
 }
 if (!head || !str)
 return (NULL);
