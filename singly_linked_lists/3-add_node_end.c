@@ -10,12 +10,12 @@ list_t *add_node_end(list_t **head, const char *str)
         return (NULL);
     }
 
-        new = malloc(sizeof(list_t));
-        new->str = strdup(str);
-        new->len = strlen(str);
-        new->next = NULL;
+    new = malloc(sizeof(list_t));
+    new->str = strdup(str);
+    new->len = strlen(str);
+    new->next = NULL;
 
-    if (!*head) /* if no nodes, newnode is head */
+    if (!*head) /* if no nodes, new is head */
 	{
 		*head = new;
 		return (new);
