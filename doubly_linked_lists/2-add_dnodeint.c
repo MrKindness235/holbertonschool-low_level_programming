@@ -20,9 +20,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new->next = *head;
 	new->prev = NULL;
 
+	/*If new isn't first node, we need to make the previous head to point to new!*/
 	if (*head)
+	{
 		(*head)->prev = new;
-
+		/*Now, head is pointing towards new, who in turn is pointing towards head!*/
+	}
 	*head = new;
+	/*And, finally, we switch places creating a link. Do not break it Oppenheimer!*/
 	return (new);
 }
